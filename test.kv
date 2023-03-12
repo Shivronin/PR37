@@ -1,0 +1,43 @@
+<TestWidget>
+    # canvas:
+    #     Rectangle:
+    #         pos: root.width/4.2, root.height*0.75
+    #         size: 200 , 200 
+    #         source: 'start.jpeg'
+    BoxLayout
+        orientation: "vertical"
+        size: root.width, root.height*0.7
+        TextInput:
+            id: input
+            
+            font_size: 16
+            multiline: False
+            halign: "center" 
+            size_hint: (1, 0.5)
+            background_color: (0, 0, 0, 0)
+            foreground_color: (1, 1, 1, 1)
+
+        GridLayout:
+            cols: 1
+            rows: 4    
+            Button:
+                id: button1
+                text: ""
+                font_size: 26
+                on_press: root.on_press("1")
+            Button:
+                id: button2
+                text: ""
+                font_size: 26
+                on_press: root.on_press("2")
+            Button:
+                id: button3
+                text: ""
+                font_size: 26
+                on_press: root.on_press("3")
+            Button:
+                id: button4
+                text: ""
+                font_size: 26
+                background_color: (14/255, 73/255, 176/255, 1)
+                on_press: root.on_press("4")
